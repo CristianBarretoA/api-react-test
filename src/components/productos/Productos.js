@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 import Producto from "./Producto"
 import axios from "axios";
-import Categoria from "../categorias/Categoria";
 
 class Productos extends Component {
 
@@ -9,7 +8,8 @@ class Productos extends Component {
     state = {
         productos: [],
         loader: false,
-        urlProductos: "http://127.0.0.1:8000/api/productos"
+        //urlProductos: "http://127.0.0.1:8000/api/productos"
+        urlProductos: "https://cbarreto-api-laravel-test.herokuapp.com/api/productos"
     };
 
     getProductos = async () => {

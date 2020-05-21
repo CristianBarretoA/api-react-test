@@ -7,10 +7,9 @@ class Producto extends Component {
     };
 
     render() {
-        const {id, categoria_id, nombre, precio, sku, created_at, updated_at,} = this.props.producto;
+        const {id, categoria_id, nombre, precio, sku, created_at} = this.props.producto;
         const categoriaIdPadre = this.props.categoriaId;
         const create = new Date(created_at);
-        const update = new Date(updated_at);
         if (categoriaIdPadre === categoria_id) {
             return (
                 <tr>
