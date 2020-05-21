@@ -57,9 +57,7 @@ class CategoriaForm extends Component {
 
     render() {
         const categoria = this.props.categoria_id;
-        {
-            this.state.form.categoriaId = categoria
-        }
+        this.state.form.categoriaId = categoria
         return (
             <div>
                 <hr/>
