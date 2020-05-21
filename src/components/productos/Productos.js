@@ -9,7 +9,8 @@ class Productos extends Component {
     state = {
         productos: [],
         loader: false,
-        urlProductos: "http://127.0.0.1:8000/api/productos"
+        //urlProductos: "http://127.0.0.1:8000/api/productos"
+        urlProductos: "https://cbarreto-api-laravel-test.herokuapp.com/api/productos"
     };
 
     getProductos = async () => {

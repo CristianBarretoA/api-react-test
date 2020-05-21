@@ -14,8 +14,10 @@ class App extends Component {
         loader: false,
         formProducto: false,
         categoria_id: 0,
-        urlCategorias: "http://127.0.0.1:8000/api/categorias",
-        urlProductos: "http://127.0.0.1:8000/api/productos"
+        //urlCategorias: "http://127.0.0.1:8000/api/categorias",
+        urlCategorias: "https://cbarreto-api-laravel-test.herokuapp.com/api/categorias",
+        //urlProductos: "http://127.0.0.1:8000/api/productos"
+        urlProductos: "https://cbarreto-api-laravel-test.herokuapp.com/api/productos"
     };
 
     getCategorias = async () => {
